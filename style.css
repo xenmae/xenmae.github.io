@@ -1,0 +1,448 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/* START */
+
+@font-face {
+    font-family: 'Varela Round', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Varela+Round&display=swap');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+
+/* NAVBAR START */
+nav {
+    position: sticky;
+    top: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: hsla(0, 0%, 100%, 0.5);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+nav .title a {
+    color: #018673;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 50px ;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    transition-duration: .2s;
+}
+
+nav ul li a:hover {
+    color: #018673;
+
+}
+/* NAVBAR END */
+
+
+/* HOME START */
+#home {
+    display: flex;
+    justify-content: space-between;
+    scroll-margin-top: 6rem;
+    margin-top: 6rem;
+    padding: 20px;
+}
+
+.home-main {
+    margin-top: 70px;
+    width: 600px;
+}
+
+.home-main h1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #018673;
+    margin-bottom: 15px;
+}
+
+.home-main h3 {
+    font-size: 18px;
+    color: #616161;
+    font-weight: bold;
+    margin-bottom: 20px ;
+}
+
+.home-main p {
+    color: #707070;
+}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+}
+
+.button .contact, .hire {
+    background-color: #018673;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #018673;
+    margin-right: 15px;
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+.button .contact:hover, .hire:hover {
+    background-color: white;
+    color: #018673;
+    border: 2px solid #018673;
+}
+
+
+.home-gambar img {
+    width: 350px;
+    height: 350px;
+}
+/* HOME END */
+
+
+/* ABOUT START */
+
+#about {
+    margin-top: 6rem;
+    scroll-margin-top: 6rem;
+    padding: 20px;
+}
+
+#about h3{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #018673;
+}
+
+.desc-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.desc-about h1 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 30px;
+    color: #404040;
+}
+
+.desc-about p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #616161;
+}
+
+.icon-sosmed {
+    display: flex;
+    margin-top: 10px;
+
+}
+
+.icon-sosmed .bi-instagram, .icon-sosmed .bi-whatsapp, .icon-sosmed .bi-envelope-plus{
+    font-size: 20px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid #616161;
+    border-radius: 30%;
+    background-color: transparent;
+    color: #616161;
+    opacity: 75%;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+
+.bi-instagram:hover, .bi-whatsapp:hover, .bi-envelope-plus:hover {
+    color: white;
+    background-color: #018673;
+    border: 2px solid #018673;
+}
+
+/* ABOUT END */
+
+/* TECH STACK START */
+
+#tech-stack {
+    margin-top: 6rem;
+    scroll-margin-top: 6rem;
+    padding: 20px;
+}
+
+#tech-stack h3 {
+    color: #018673;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#tech-stack h1 {
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+}
+
+.tech-logo {
+    padding-top: 10px ;
+    display: flex;
+    justify-content: center;
+}
+
+.tech-logo .html, .css {
+    background-color: #f6f6f6;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 20%;
+    box-shadow: 0px 0px 18px -3px rgba(91,91,91,0.75);
+    -webkit-box-shadow: 0px 0px 18px -3px rgba(91,91,91,0.75);
+    -moz-box-shadow: 0px 0px 18px -3px rgba(91,91,91,0.75);
+}
+
+.tech-logo img {
+    width: 70px;
+    height: 70px;
+}
+
+/* TECH STACK END */
+
+
+/* CONTACT START */
+
+#contact {
+    height: 100vh;
+    margin-top: 6rem;
+    scroll-margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h3 {
+    color: #018673;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 15px
+}
+
+#contact h1 {
+    font-weight: bold;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 4rem;
+}
+
+#contact .form {
+    position: relative;
+    padding: 20px;
+    margin: auto;
+    text-align: start;
+    width: 800px;
+}
+
+#contact .nama, .email{
+    margin-bottom: 20px;
+}
+
+.form  label {
+    color: #006354;
+    font-weight: bold;
+}
+
+.form input{
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 800px;
+    height: 40px;
+    background-color: #01867244;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+}
+
+::placeholder {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.form input[type="text"] {
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+.pesan textarea {
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 10px;
+    resize: vertical;
+    width: 800px;
+    box-sizing: border-box;
+    background-color: #01867244;
+    border-radius: 10px;
+    border-width: 0;
+    padding: 10px;
+}
+
+
+.form button {
+    position: absolute;
+    right: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px;
+    color: white;
+    border-width: 0;
+    background-color: #018673;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+    border: 2px solid #018673;
+}
+
+.form button:hover {
+    color: #018673;
+    background-color: #f6f6f6;
+    border: 2px solid #018673;
+}
+
+
+/* CONTACT END */
+
+
+/* FOOTER START */
+
+.footer {
+    background-color: #00332b;
+    padding: 15px;
+}
+
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.icon-footer .bi-instagram, .icon-footer .bi-whatsapp, .icon-footer .bi-envelope-plus {
+    font-size: 17px;
+    margin-right: 10px;
+    padding: 5px;
+    border: 2px solid #7a7a7a;
+    border-radius: 30%;
+    background-color: transparent;
+    color: #7a7a7a;
+    cursor: pointer;
+    transition-duration: .1s;
+}
+
+.icon-footer .bi-instagram:hover, .icon-footer .bi-whatsapp:hover, .icon-footer .bi-envelope-plus:hover {
+    color: white;
+    background-color: #00b59a;
+    border: 2px solid #00b59a;
+}
+
+.footer p {
+	color: #bebebe;
+	text-align: center;
+	font-size: 16px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #018673;
+}
+
+
+/* FOOTER END */
+/* END */
+
+
+/* clear fix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
